@@ -25,6 +25,10 @@ http://ESP32IPADDRESS/delete?path=/file.txt to delete file.txt from SD
 
 OTA updates are done directly through Arduino IDE by selecting the OTA port.
 
+Just include the library in the main sketch and call the setupOTA method on setup and
+handleOTA on the loop.
+
+WARNING: Usage currently breaks ESP32 communication with GPS module for unkonwn reason.
 */
 
 
