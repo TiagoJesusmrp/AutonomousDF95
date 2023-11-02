@@ -1,0 +1,4 @@
+A implementação destas funcionalidades causava um problema no sistema em que o GPS não estava a ser lido.
+
+1/11: O driver do WiFi do ESP32 utiliza o ADC2, pelo que os pins associados ao DAC não são possíveis de utilizar quando se utiliza o WiFi. Os pins utilizados para a interface série virtual do GPS correspondem (ACHO EU, tenho quase a certeza, mas é uma questão de verificar) a estes pins. Trocando 
+os pins da interface do GPS para outros que não tenham a ver com o ADC2 já deve funcionar tudo junto.
